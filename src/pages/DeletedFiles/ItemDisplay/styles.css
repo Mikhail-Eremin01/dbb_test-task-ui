@@ -1,0 +1,112 @@
+.deleted-files__container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	position: relative;
+	cursor: default;
+}
+
+.deleted-files__icon {
+	background-color: #F7F5F2;
+	border-radius: 5px;
+	width:210px;
+	height: 210px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: 0.2s ease;
+}
+
+.deleted-files__icon:hover {
+	background-color: #eeeeee;
+}
+
+.deleted-files__icon svg {
+	width: 140px;
+	height: 140px;
+}
+
+.deleted-files__icon-wrapper svg {
+	width: 30px !important;
+	height: 30px !important;
+}
+
+.deleted-files__main-description {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	align-items:flex-end;
+}
+
+.deleted-files__restore-btn {
+	width: 40px;
+	height: 40px;
+	/* background-color: red; */
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	padding: 2px;
+	/* border: 2px solid #3C3A38; */
+	border-radius: 5px;
+	cursor: pointer;
+	transition: .1s ease-in-out;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.deleted-files__icon--unclickable:hover {
+	cursor: auto;
+	background-color: #F7F5F2;
+}
+
+.deleted-files__restore-btn:hover {
+	transform: rotate(-10deg)
+}
+
+.deleted-files__name {
+	font: 400 14px/18px "Arial", sans-serif;
+	color: black;
+}
+
+.deleted-files__extension {
+	font: 400 12px/14px "Arial", sans-serif;
+	color: #7B756D;
+}
+
+@media (max-width: 875.98px) {
+    .deleted-files__icon {
+		width: 170px;
+		height: 170px;
+	}
+	.img {
+		width: 120px;
+		height: 120px;
+	}
+}
+
+@media (max-width: 625.98px) {
+    .deleted-files__container {
+		flex-direction: row;
+	}
+	.deleted-files__icon {
+		width: 70px;
+		height: 70px;
+		background-color: #fff;
+	}
+	.deleted-files__icon svg {
+		width: 30px;
+		height: 30px;
+	}
+	.deleted-files__main-description {
+		gap: 0px;
+	}
+	.img {
+		width: 40px;
+		height: 40px;
+	}
+	.deleted-files__restore-btn {
+		top: 15px;
+	}
+}

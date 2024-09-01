@@ -1,0 +1,67 @@
+/* SendComplaint */
+
+.create-folder__container {
+}
+
+.create-folder__title {
+    margin-bottom: 32px;
+    font: 700 24px/34px "Arial", sans-serif;;
+    width: 75%;
+    color: #000;
+}
+
+.create-folder__divider {
+    width: 100%;
+    border-bottom: 1px solid #48494b;
+    margin: 32px auto;
+}
+
+.create-folder__btn {
+    background-color: black;
+    color: #fff;
+    width: 100%;
+}
+
+.create-folder__button {
+    text-align: center;
+}
+
+.create-folder__input {
+    /* margin-bottom: 20px; */
+}
+
+.create-folder-input-form {
+    margin-bottom: 20px;
+}
+
+/*
+ * Responsive
+ * https://getbootstrap.com/docs/5.1/layout/breakpoints/#max-width
+*/
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+    .create-folder__title {
+        margin-bottom: 25px;
+        padding-right: 40px;
+        font: bold 27px/30px "Arial", sans-serif;;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .create-folder__title {
+        margin-bottom: 20px;
+        font: bold 20px/30px "Arial", sans-serif;;
+        padding-right: 0px;
+    }
+    .create-folder__btn {
+        width: 100%;
+    }
+}

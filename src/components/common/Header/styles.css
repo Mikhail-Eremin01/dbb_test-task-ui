@@ -1,0 +1,176 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
+}
+
+.header__overlay {
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(59, 62, 83, 0.5);
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    border-bottom: 2px solid #EEEEEE;
+}
+
+.header__menu {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+    position: relative;
+    padding: 0;
+}
+
+.header__menu svg {
+    width: 15px;
+    height: 15px;
+}
+.header__menu-item {
+    letter-spacing: 0.02em;
+    font: 500 15px/16px "Arial", sans-serif;
+    color: #5f5c57;
+    padding: 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.header__menu-item:hover {
+    color: #000;
+    background-color: #EBE9E6;
+}
+
+.header__menu-item.active {
+    color: #000;
+    background-color: #EBE9E6;
+}
+
+.header__burger-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+    border: 2px solid #EEEEEE;
+    border-radius: 32px;
+}
+
+.header__burger-btn-line,
+.header__burger-btn-line::before,
+.header__burger-btn-line::after {
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    background-color: #3B3E53;
+}
+
+.header__burger-btn-line::before {
+    content: '';
+    top: -6px;
+}
+.header__burger-btn-line::after {
+    content: '';
+    top: 6px;
+}
+
+.header__burger-menu-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.logout__btn {
+    background-color: black;
+    color: #fff;
+    width: 100px;
+    margin-right: 10px;
+}
+
+/*
+ * Responsive
+ * https://getbootstrap.com/docs/5.1/layout/breakpoints/#max-width
+*/
+
+@media (max-width: 1399.98px) {  }
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+    .header__burger-menu-wrapper {
+        position: absolute;
+        left: 0;
+        top: 0px;
+        z-index: 999;
+        width: 340px;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 30px rgb(17 17 17 / 10%);
+    }
+
+    .header__burger-menu {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__menu {
+        justify-content: center;
+    }
+
+    .header__menu-item {
+        font: 500 14px/14px "Arial", sans-serif;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .header__menu-item {
+        padding: 10px;
+        padding-left: 20px;
+        text-align: start;
+    }
+    .header__top {
+        padding: 0px 15px;
+    }
+    .logout__btn {
+        width: 80px;
+        margin-right: 0px;
+        height: 30px;
+        /* border-radius: 0px; */
+    }
+}
+
+@media (max-width: 625.98px) {
+    .header__top {
+        border-bottom: none;
+    }
+    .header__burger-menu-list svg {
+        width: 15px;
+        height: 15px;
+    }
+    .header__burger-btn {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 450.98px) {
+    .header__burger-menu-wrapper {
+        width: 100%;
+    }
+
+    .header__burger-menu {
+        padding: 0px;
+    }
+}

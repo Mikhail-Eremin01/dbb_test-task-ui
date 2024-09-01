@@ -1,0 +1,20 @@
+.empty-folder-container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+	font: 600 22px/16px "Arial", sans-serif;
+}
+
+.empty-folder-container svg {
+	width: 24px;
+	height: 24px;
+}
+
+@media (max-width: 575.98px) {
+    .empty-folder-container {
+		font: 600 14px/16px "Arial", sans-serif;
+	}
+}

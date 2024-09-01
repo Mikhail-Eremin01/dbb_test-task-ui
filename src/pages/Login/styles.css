@@ -1,0 +1,27 @@
+.authorization__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	gap: 20px;
+}
+
+.authorization__title {
+	font: 600 22px/20px "Arial", sans-serif;
+}
+
+.back-to-main-page__btn {
+    background-color: black;
+    color: #fff;
+    width: 400px;
+}
+
+@media (max-width: 675.98px) {
+	.authorization__title {
+		font: 600 18px/16px "Arial", sans-serif;
+	}
+	.back-to-main-page__btn {
+		width: 250px;
+	}
+}

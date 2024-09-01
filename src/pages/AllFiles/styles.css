@@ -1,0 +1,57 @@
+.files-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.content-area {
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+	flex-wrap: wrap;
+}
+
+.upload-bar {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	align-items: flex-end;
+	margin-bottom: 30px;
+	gap: 10px;
+}
+
+.allFiles-file-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	position: relative;
+}
+
+.allFiles_folder_main-description {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	align-items: center;
+}
+
+.files-create-folder__btn {
+	min-height: 96px;
+	background-color: black;
+	color: #fff;
+}
+
+@media (max-width: 825.98px) {
+    .upload-bar {
+		flex-direction: column-reverse;
+		align-items: flex-start;
+	}
+	.files-create-folder__btn {
+		min-height: auto;
+	}
+}
+
+@media (max-width: 625.98px) {
+    .content-area {
+		flex-direction: column;
+		gap: 0px;
+	}
+}

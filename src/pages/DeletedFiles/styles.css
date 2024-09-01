@@ -1,0 +1,62 @@
+.deleted-files__main-container {
+	display: flex;
+	gap: 15px;
+	flex-wrap: wrap;
+	flex-direction: row;
+	/* justify-content: center; */
+}
+
+.deletedFiles-file-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	position: relative;
+}
+
+.deletedFiles_img {
+	background-color: #F7F5F2;
+	border-radius: 5px;
+	width:210px;
+	height: 210px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: 0.2s ease;
+}
+
+.deletedFiles_img:hover {
+	background-color: #eeeeee;
+}
+
+.deletedFiles_img svg {
+	width: 140px;
+	height: 140px;
+}
+
+.deletedFiles_folder__svg svg {
+	width: 30px !important;
+	height: 30px !important;
+}
+
+.deletedFiles_folder_main-description {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	align-items: center;
+}
+
+.img {
+	width: 150px;
+	height: 150px;
+}
+
+@media (max-width: 625.98px) {
+    .deleted-files__main-container {
+		flex-direction: column;
+		gap: 0px;
+	}
+	.deletedFiles-file-container {
+		align-items: center;
+	}
+}

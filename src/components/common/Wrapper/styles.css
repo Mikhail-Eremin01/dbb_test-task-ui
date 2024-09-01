@@ -1,0 +1,38 @@
+/* Wrapper */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.wrapper__content {
+    flex-grow: 1;
+    padding: 30px;
+}
+
+/*
+ * Responsive
+ * https://getbootstrap.com/docs/5.1/layout/breakpoints/#max-width
+*/
+
+@media (max-width: 1399.98px) {  }
+
+@media (max-width: 1199.98px) {  }
+
+@media (max-width: 991.98px) {
+    .wrapper__content {
+        padding: 20px 25px;
+    }
+}
+
+@media (max-width: 767.98px) {  }
+
+@media (max-width: 575.98px) {
+    .wrapper__content {
+        padding: 20px 15px;
+    }
+}
+
+@media (max-width: 400.98px) { }
